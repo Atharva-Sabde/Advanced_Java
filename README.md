@@ -72,3 +72,30 @@ What is Dynamic input? : When we provide the input data to the java application 
         2. Convert data from String type to primitive type by using parseXXX() methods (wrapper classes)
 
         This method is complex and timeconsuming, so instead of this conversion we use Scanner.
+2. Scanner            [ java.util.Scanner]
+    - </>
+        1. Create Scanner class object.
+
+            `Scanner s = new Scanner(System.in);`
+
+        2. Read dynamic input from Scanner
+
+            (a) To read primitive data as dynamic input :
+                      public xxx nextXxx()
+
+                `public int nextInt()`
+
+                `public float nextFloat()`
+
+            (b) To read String data as dynamic input:
+
+                `public String next()`
+
+                `public String nextLine()`
+
+            BufferReader and Scanner needs two instructions to take dynamic input i.e  : 1. Display request message
+            2. Read the dynamic input
+
+            BufferReader and Scanner do not provide the security to our data. (passwords , pins)
+
+            To overcome above problems , we use Console.
