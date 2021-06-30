@@ -99,3 +99,27 @@ What is Dynamic input? : When we provide the input data to the java application 
             BufferReader and Scanner do not provide the security to our data. (passwords , pins)
 
             To overcome above problems , we use Console.
+3. Console       [ java.io.Console]
+    - </>
+
+        Displays message waits for user to input data and then take input, all in one single instruction.
+
+        1. Create Console object.
+         `public static Console console()` from system class.
+
+            `Console c = System.Console();`
+
+        2. Read Dynamic input through Console:
+            1. To display a request message and read String data as dynamic input.
+
+                public String readLine(String message)
+
+                `String uname = c.readLine("Username   : ");`
+
+            2. To display a message and read password data in the form of char[] :
+
+                public char[] readPassword(String message)
+
+                `char [] pwd = c.readPassword( "Password  : ");`
+
+                `String upwd = new String(pwd);` // converts char array into String.
