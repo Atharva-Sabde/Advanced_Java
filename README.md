@@ -34,3 +34,15 @@ When JVM encounters Class.forName() it does following things;
     
     
 > When we start a java program and run it from CMD, cmd generates the inputstream object ,which is predefined
+
+
+### Stream :
+
+`Stream` is a medium , or channel which is able to carry data continuously from input devices to java application and vice versa.
+
+1. Byte-oriented Streams             [ Allows data in the form of bytes ]
+    1. Input Stream        ( From input devices to  java program)
+    2. Output Stream     ( From java program to output devices)
+2. Character-oriented Streams    [ Allows data in the form of characters ]
+    1. Reader                  ( From input devices to  java program) 
+    2. Writer                   ( From java program to output devices)
