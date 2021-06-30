@@ -30,3 +30,7 @@ When JVM encounters Class.forName() it does following things;
 2. JVM search for .class files at 3 locations, ( current location | java predefined library | Location referred by class path environment variable )
 
     If the .class file is not found in the all 3 locations , JVM will raise an Exception (ClassNotFoundException).
+    
+    
+    
+> When we start a java program and run it from CMD, cmd generates the inputstream object ,which is predefined
