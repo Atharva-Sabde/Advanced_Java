@@ -46,3 +46,29 @@ When JVM encounters Class.forName() it does following things;
 2. Character-oriented Streams    [ Allows data in the form of characters ]
     1. Reader                  ( From input devices to  java program) 
     2. Writer                   ( From java program to output devices)
+
+Dynamic  Input-Output Approaches:
+
+What is Dynamic input? : When we provide the input data to the java application at runtime, then it is called dynamic input.
+
+1. BufferedReader            [ java.io.BufferedReader ]
+    - </>
+
+        CMD → [System.in](http://system.in) →  byte → InputStreamReader → character → BufferedReader → String  → javaAppl .
+
+        `BufferedReader br = new BufferedReader(new InputStreamReader(System.in));`
+
+        InputStreamReader converts the binary data from CMD to character form
+
+        BufferedReader converts the character data from InputStreamReader into String form.
+
+        `readLIne()` → reads whole string
+
+        `read()` → reads only a character
+
+        To take input using Dynamic Input method by BufferReader
+
+        1. Read data as String by using readLine()
+        2. Convert data from String type to primitive type by using parseXXX() methods (wrapper classes)
+
+        This method is complex and timeconsuming, so instead of this conversion we use Scanner.
